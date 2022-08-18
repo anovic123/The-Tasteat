@@ -1,0 +1,1213 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+* img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #555555;
+}
+body._lock {
+  overflow: hidden;
+}
+
+[class*=__container] {
+  max-width: 1360px;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+
+/*--------------------General--------------------*/
+.title {
+  font-size: 15px;
+  color: #292e36;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 4px;
+  border-top: 1px solid #e1b168;
+  border-bottom: 1px solid #e1b168;
+  display: inline-block;
+}
+
+.main-title {
+  font-family: "Cormorant Infant";
+  font-weight: 400;
+  font-size: 40px;
+  color: #292e36;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #e1b168;
+  color: #e1b168;
+  padding: 20px 57px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+@media (any-hover: hover) {
+  .button:hover {
+    background: #9b6e2b;
+    color: #fff;
+  }
+}
+
+.button-white {
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 22px;
+  line-height: 33px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  overflow: hidden;
+}
+@media (any-hover: hover) {
+  .button-white:hover {
+    background: rgb(202, 201, 201);
+  }
+}
+@media (max-width: 768px) {
+  .button-white {
+    padding: 10px 20px;
+    font-size: 19px;
+  }
+}
+
+.header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-block__title {
+  margin-bottom: 15px;
+}
+.header-block__main-title {
+  margin-bottom: 12px;
+}
+.header-block__decrp-text {
+  max-width: 813px;
+  text-align: center;
+}
+
+/*--------------------/General--------------------*/
+/*--------------------Header--------------------*/
+.header {
+  background: #292e36;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  min-height: 157px;
+  border-bottom: 1px solid #5c6168;
+  padding: 40px 0;
+}
+@media (max-width: 1090px) {
+  .header__top {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.header__phone {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 57px;
+  border: 2px solid #e1b168;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .header__phone:hover {
+    background-color: rgb(34, 33, 33);
+  }
+}
+@media (max-width: 750px) {
+  .header__phone {
+    padding: 10px 28.5px;
+  }
+}
+.header__logo svg {
+  max-width: 100%;
+}
+.header__action-button {
+  font-size: 20px;
+  color: #292e36;
+  text-align: center;
+  padding: 20px 85px;
+  background: #e1b168;
+  border: 2px solid #e1b168;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .header__action-button:hover {
+    background: #9b6e2b;
+    color: #fff;
+  }
+}
+@media (max-width: 750px) {
+  .header__action-button {
+    padding: 13.5px 55.99px;
+  }
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  gap: 10px;
+  color: #ffffff;
+  min-height: 82px;
+}
+.header__menu-burger {
+  flex: 1 1 auto;
+}
+.header__link-item + .header__link-item {
+  margin-left: 20px;
+}
+@media (max-width: 1050px) {
+  .header__link-item + .header__link-item {
+    margin-left: 10px;
+  }
+}
+.header__content {
+  display: flex;
+  gap: 50px;
+}
+@media (max-width: 1150px) {
+  .header__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header__content-box {
+  font-family: "Josefin Sans";
+  color: #fff;
+  padding: 159px 0;
+}
+@media (min-width: 1150px) {
+  .header__content-box {
+    flex: 0 1 60%;
+  }
+}
+@media (max-width: 1150px) {
+  .header__content-box {
+    order: 2;
+    padding: 40px 0;
+  }
+}
+.header__title {
+  font-family: "Cormorant Infant";
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 110%;
+  margin-bottom: 26px;
+}
+@media (max-width: 720px) {
+  .header__title {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+}
+.header__text {
+  margin-bottom: 55px;
+}
+@media (max-width: 720) {
+  .header__text {
+    margin-bottom: 25px;
+  }
+}
+.header__content-media {
+  order: 1;
+}
+
+.menu-burger__icon {
+  display: none;
+}
+@media (max-width: 850px) {
+  .menu-burger__icon {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 5;
+    background: transparent;
+    border: none;
+  }
+  .menu-burger__icon span, .menu-burger__icon::before, .menu-burger__icon::after {
+    content: "";
+    transition: all 0.3s ease 0s;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  .menu-burger__icon::before {
+    width: 40%;
+    top: 0;
+  }
+  .menu-burger__icon::after {
+    bottom: 0;
+  }
+  .menu-burger__icon span {
+    width: 60%;
+    top: calc(50% - 1px);
+  }
+  ._active .menu-burger__icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  ._active .menu-burger__icon span {
+    width: 0;
+  }
+  ._active .menu-burger__icon::before, ._active .menu-burger__icon::after {
+    background-color: rgb(255, 255, 255);
+  }
+  ._active .menu-burger__icon::before {
+    width: 60%;
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+  ._active .menu-burger__icon::after {
+    width: 60%;
+    bottom: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+}
+.menu-burger__body {
+  left: -100%;
+}
+@media (max-width: 850px) {
+  .menu-burger__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: auto;
+    background-color: #000;
+    padding: 100px 15px 50px 15px;
+    z-index: 4;
+    transition: left 0.3s ease 0s;
+  }
+  .menu-burger__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    left: -100%;
+    top: 0;
+    background-color: #000;
+  }
+  ._active .menu-burger__body {
+    left: 0;
+  }
+  ._active .menu-burger__body::before {
+    left: 0;
+  }
+  ._active .menu-burger__body .menu-burger__icon {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+}
+.menu-burger__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+@media (max-width: 1050px) {
+  .menu-burger__list {
+    gap: 30px;
+  }
+}
+@media (max-width: 850px) {
+  .menu-burger__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.menu-burger__link {
+  color: #ffffff;
+  transition: all 0.35s ease 0s;
+}
+@media (any-hover: hover) {
+  .menu-burger__link:hover {
+    color: #e1b168;
+  }
+}
+@media (max-width: 850px) {
+  .menu-burger__link {
+    font-size: 30px;
+  }
+}
+.menu-burger__link--active {
+  color: #e1b168;
+}
+
+/*--------------------/Header--------------------*/
+/*--------------------Contacts--------------------*/
+.contacts {
+  padding: 100px 0;
+  background: #fff8f5;
+}
+@media (max-width: 768px) {
+  .contacts {
+    padding: 50px 0;
+  }
+}
+.contacts__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+}
+@media (max-width: 992px) {
+  .contacts__container {
+    row-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media (max-width: 465px) {
+  .contacts__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contacts__item {
+  display: inline-grid;
+  gap: 20px;
+  text-align: center;
+  max-width: 428px;
+  grid-template-rows: 83px auto;
+}
+.contacts__item-title {
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  line-height: 130%;
+  color: #292e36;
+}
+/*--------------------/Contacts--------------------*/
+/*--------------------story--------------------*/
+.story {
+  padding: 100px 0;
+  background: #fff8f5;
+}
+@media (max-width: 768px) {
+  .story {
+    padding: 50px 0;
+  }
+}
+.story__container {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+@media (max-width: 1350px) {
+  .story__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 750px) {
+  .story__content {
+    max-width: 559px;
+  }
+}
+@media (max-width: 750px) {
+  .story__content {
+    width: 100%;
+  }
+}
+.story__title {
+  font-family: "Cormorant Infant";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #292e36;
+  margin-bottom: 15px;
+}
+@media (max-width: 425px) {
+  .story__title {
+    margin-bottom: 10px;
+    font-size: 45px;
+  }
+}
+.story__text {
+  margin-bottom: 25px;
+}
+@media (max-width: 425px) {
+  .story__text {
+    margin-bottom: 15px;
+  }
+}
+.story__chronology-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+@media (max-width: 750px) {
+  .story__chronology-block {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .story__chronology-block {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+}
+.story__chronology-item {
+  max-width: 247px;
+}
+.story__chronology-year {
+  font-family: "Cormorant Infant";
+  font-size: 40px;
+  margin-bottom: 15px;
+  line-height: 140%;
+  color: #292e36;
+}
+.story__author span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*--------------------/story--------------------*/
+/*--------------------menu--------------------*/
+.menu {
+  padding: 150px 0;
+}
+@media (max-width: 1024px) {
+  .menu {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    padding: 50px 0;
+  }
+}
+.menu__title {
+  margin-bottom: 10px;
+}
+.menu__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 55px;
+}
+@media (max-width: 1300px) {
+  .menu__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.menu__block {
+  width: 775px;
+}
+@media (max-width: 900px) {
+  .menu__block {
+    width: 100%;
+  }
+}
+.menu__title-category {
+  font-family: "Cormorant Infant";
+  font-size: 36px;
+  font-weight: 400;
+  color: #292e36;
+  margin-bottom: 40px;
+}
+.menu__items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+@media (max-width: 425px) {
+  .menu__items {
+    display: block;
+  }
+}
+.menu__special-dishes {
+  max-width: 486px;
+}
+.menu__special-text {
+  margin: 13px 0 45px 0;
+}
+.menu__special-img {
+  margin-bottom: 60px;
+}
+.menu-items__dish {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 10px;
+}
+.menu-items__dish-inner {
+  position: relative;
+  width: 100%;
+}
+.menu-items__title {
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  color: #292e36;
+}
+@media (min-width: 800px) {
+  .menu-items__ingredients::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 2px;
+    background: #aaaaaa;
+  }
+}
+.menu-items__price {
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  color: #292e36;
+}
+
+/*--------------------/menu--------------------*/
+/*--------------------testomonial--------------------*/
+.testimonial {
+  padding: 150px 0;
+  background: #292e36;
+}
+@media (max-width: 1024px) {
+  .testimonial {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 768px) {
+  .testimonial {
+    padding: 50px 0;
+  }
+}
+.testimonial__header {
+  margin-bottom: 80px;
+}
+.testimonial__title {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.testimonial__main-title {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.testimonial__text {
+  color: #fff;
+}
+
+.testimonial-slide {
+  display: flex;
+  gap: 30px;
+}
+.testimonial-slide__item {
+  background: #343942;
+  padding: 0 40px;
+}
+.testimonial-slide__header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 425px) {
+  .testimonial-slide__header {
+    padding-bottom: 15px;
+  }
+  .testimonial-slide__header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 1px;
+    background: #797e89;
+  }
+}
+.testimonial-slide__logo img {
+  border-radius: 100px;
+}
+.testimonial-slide__initials {
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  color: #ffffff;
+}
+.testimonial-slide__location {
+  color: #e1b168;
+}
+.testimonial-slide__text {
+  margin-top: 30px;
+  font-family: "Cormorant Infant";
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  max-width: 425px;
+}
+@media (max-width: 425px) {
+  .testimonial-slide__text {
+    margin-top: 10px;
+  }
+}
+.controll-testimonial {
+  margin-top: 30px;
+}
+.controll-testimonial__dotts {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.controll-testimonial__dotts .swiper-pagination-bullet {
+  margin: 0px 7.5px;
+  cursor: pointer;
+  height: 30px;
+  width: 18px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  background: transparent;
+}
+.controll-testimonial__dotts .swiper-pagination-bullet::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #898989;
+}
+.controll-testimonial__dotts .swiper-pagination-bullet::before {
+  content: "";
+  background-color: orange;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  transform: translate(0px, -50%);
+  position: absolute;
+  opacity: 0;
+}
+.controll-testimonial__dotts .swiper-pagination-bullet-active::after {
+  background-color: orange;
+}
+.controll-testimonial__dotts .swiper-pagination-bullet-active::before {
+  opacity: 1;
+  transition: left 3s linear 0s;
+  left: 8px;
+}
+
+/*--------------------/testomonial--------------------*/
+/*--------------------offers--------------------*/
+.offers {
+  padding: 150px 0;
+}
+@media (max-width: 1024px) {
+  .offers {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 768px) {
+  .offers {
+    padding: 50px 0;
+  }
+}
+.offers__inner {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.offers__item {
+  padding: 67px 40px 45px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 650px;
+}
+@media (min-width: 764px) {
+  .offers__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}
+@media (max-width: 1360px) {
+  .offers__item {
+    width: 100%;
+  }
+}
+.offers__item--1 {
+  background-image: url(../img/offers/01-bg.jpg);
+}
+.offers__item--2 {
+  background-image: url(../img/offers/02-bg.jpg);
+}
+.offers__item-price {
+  max-width: 150px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offers__item-price--1 {
+  background-image: url(../img/offers/white-label.svg);
+}
+.offers__item-price--2 {
+  background-image: url(../img/offers/dark-label.svg);
+  color: #fff;
+}
+.offers__item-price-label {
+  font-family: "Cormorant Infant";
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+}
+.offers__item-box {
+  margin-top: 50px;
+}
+.offers__item-discount {
+  font-size: 15px;
+  color: #292e36;
+  padding-top: 4px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-top: 1px solid #292e36;
+  border-bottom: 1px solid #292e36;
+}
+.offers__item-dish {
+  margin: 8px 0 5px 0;
+  font-size: 40px;
+  color: #292e36;
+}
+/*--------------------/offers--------------------*/
+/*--------------------popular-dishes--------------------*/
+.popular-dishes__inner {
+  margin: 50px 0 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.popular-dishes__item {
+  width: 318px;
+  overflow: hidden;
+}
+.popular-dishes__item-img img {
+  height: 318px;
+  width: 307px;
+}
+.popular-dishes__item-body {
+  padding-right: 10px;
+}
+.popular-dishes__item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.popular-dishes__title {
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  color: #292e36;
+}
+.popular-dishes__price {
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  color: #292e36;
+}
+.popular-dishes__descrp {
+  margin-top: 15px;
+}
+/*--------------------/popular-dishes--------------------*/
+/*--------------------services--------------------*/
+.services {
+  padding: 150px 0;
+  background: #292e36;
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .services {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 768px) {
+  .services {
+    padding: 50px 0;
+  }
+}
+.services__container {
+  display: flex;
+  gap: 80px;
+}
+@media (max-width: 1290px) {
+  .services__container {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 1290px) {
+  .services__info {
+    max-width: 438px;
+  }
+}
+@media (max-width: 1290px) {
+  .services__info {
+    margin-bottom: 20px;
+  }
+}
+.services__title {
+  color: #fff;
+}
+.services__main-title {
+  color: #fff;
+  margin: 11px 0 11px 0;
+}
+.services__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.services__item {
+  border: 20px solid #323841;
+  padding: 60px 30px;
+  text-align: center;
+  width: 254px;
+}
+.services__item-text {
+  font-family: "Cormorant Infant";
+  font-size: 25px;
+  text-align: center;
+}
+
+/*--------------------/services--------------------*/
+/*--------------------blog--------------------*/
+.blog {
+  padding: 150px 0;
+}
+@media (max-width: 1024px) {
+  .blog {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 768px) {
+  .blog {
+    padding: 50px 0;
+  }
+}
+.blog__inner {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+@media (min-width: 900px) {
+  .item-blog {
+    flex: 0 1 48%;
+  }
+}
+.item-blog__top {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.item-blog__button {
+  padding: 20px 57px;
+  color: #292e36;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  background: #e1b168;
+  border: 2px solid #e1b168;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translateX(50%);
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .item-blog__button:hover {
+    color: #fff;
+    background: #ac7421;
+  }
+}
+.item-blog__body {
+  border: 1px solid #c4c4c4;
+  padding: 50px;
+}
+.item-blog__category {
+  margin-right: 30px;
+}
+@media (max-width: 421px) {
+  .item-blog__category {
+    margin: 0 0 10px 0;
+  }
+}
+.item-blog__title {
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  text-transform: capitalize;
+  line-height: 130%;
+  color: #292e36;
+  margin: 25px 0;
+}
+/*--------------------/blog--------------------*/
+/*--------------------reservation--------------------*/
+.reservation {
+  background-image: url(../img/reservation/reservation-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.reservation__container {
+  padding: 140px 260px;
+}
+@media (max-width: 1440px) {
+  .reservation__container {
+    padding: 100px 220px;
+  }
+}
+@media (max-width: 1024px) {
+  .reservation__container {
+    padding: 60px 110px;
+  }
+}
+@media (max-width: 768px) {
+  .reservation__container {
+    padding: 30px;
+  }
+}
+.reservation__inner {
+  padding: 140px;
+  background: rgba(41, 46, 54, 0.95);
+}
+@media (max-width: 1440px) {
+  .reservation__inner {
+    padding: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .reservation__inner {
+    padding: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .reservation__inner {
+    padding: 70px 40px;
+  }
+}
+.reservation__block {
+  margin-bottom: 40px;
+}
+.reservation__title {
+  color: #fff;
+}
+.reservation__main-title {
+  color: #fff;
+  text-align: center;
+}
+.reservation__form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.reservation__input input {
+  padding: 20px 0 20px 23px;
+  border: 1px solid #858585;
+  background: transparent;
+  max-width: 100%;
+  color: #fff;
+  font-size: 19px;
+}
+.reservation__input input::-moz-placeholder {
+  font-family: "Cormorant Infant";
+  font-size: 22px;
+  color: #ffffff;
+}
+.reservation__input input:-ms-input-placeholder {
+  font-family: "Cormorant Infant";
+  font-size: 22px;
+  color: #ffffff;
+}
+.reservation__input input::placeholder {
+  font-family: "Cormorant Infant";
+  font-size: 22px;
+  color: #ffffff;
+}
+.reservation__button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*--------------------/reservation--------------------*/
+/*--------------------work--------------------*/
+.footer {
+  background: #292e36;
+  padding: 130px 0 30px 0;
+}
+@media (max-width: 1440px) {
+  .footer {
+    padding: 100px 0 30px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 80px 0 30px 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 0 30px 0;
+  }
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .footer__top {
+    flex-wrap: wrap;
+  }
+}
+.footer__text {
+  font-size: 22px;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .footer__text:hover {
+    text-decoration: underline;
+  }
+}
+.footer__logo svg {
+  max-width: 100%;
+}
+.footer__link-item + .footer__link-item {
+  margin-left: 10px;
+}
+.footer__bottom {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 10px;
+}
+@media (min-width: 1230px) {
+  .footer__bottom {
+    justify-items: center;
+  }
+}
+@media (max-width: 1230px) {
+  .footer__bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1024px) {
+  .footer__bottom {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .footer__column {
+    margin-bottom: 15px;
+  }
+}
+.footer__title {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.footer__address {
+  color: #ffffff;
+}
+.footer__phone {
+  color: #e1b168;
+}
+@media (any-hover: hover) {
+  .footer__phone:hover {
+    text-decoration: underline;
+  }
+}
+.footer__email {
+  color: #e1b168;
+}
+@media (any-hover: hover) {
+  .footer__email:hover {
+    text-decoration: underline;
+  }
+}
+.footer__form-line {
+  display: flex;
+}
+.footer__form-input {
+  color: #fff;
+  height: 68px;
+  padding: 0px 20px;
+  border: 1px solid #858585;
+  border-right: none;
+  font-size: 20px;
+  background: transparent;
+  width: 456px;
+}
+@media (max-width: 500px) {
+  .footer__form-input {
+    width: 100%;
+  }
+}
+.footer__work-item {
+  color: #e1b168;
+}
+.footer__work-item span {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+/*--------------------/work--------------------*/
+._anim-show._active,
+._active ._anim-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}/*# sourceMappingURL=style.css.map */
